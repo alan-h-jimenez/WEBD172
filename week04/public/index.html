@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WEBD 152 Assignment 02">
+    <meta name="author" content="Alan Jimenez">
+    <title>Assignment 04</title>
+    <script src="./script.js" defer></script> 
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container menu">
+      <button id="allRecords">
+        <svg fill="#000000" viewBox="0 0 32 32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M16.984 16.047h-8v0.906h8v-0.906zM16.984 19.047h-8v0.969h8v-0.969zM12.016 4.016v3.016h-3.032v3.016h-2.953v18.938h13.969v-3.031h2.953v-2.938h3.016v-19h-13.953zM19.031 28.016h-12.031v-17.063h12.031v17.063zM21.984 25.047h-1.984v-15h-10.047v-2.047h12.031v17.047zM25 22.047h-2.047v-15.016h-9.969v-2.047h12.016v17.063zM16.984 25.031h-8v0.969h8v-0.969zM16.984 22.016h-8v0.969h8v-0.969zM16.999 13.016h-8v1h8v-1z">
+          </path>
+        </svg>
+      </button>
+      <button id="oneRecord">
+        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.0799 5 6.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.0799 21 8.2 21H12M13 3L19 9M13 3V7.4C13 7.96005 13 8.24008 13.109 8.45399C13.2049 8.64215 13.3578 8.79513 13.546 8.89101C13.7599 9 14.0399 9 14.6 9H19M19 9V11M9 17H11M9 13H13M9 9H10M19.2686 19.2686L21 21M20 17.5C20 18.8807 18.8807 20 17.5 20C16.1193 20 15 18.8807 15 17.5C15 16.1193 16.1193 15 17.5 15C18.8807 15 20 16.1193 20 17.5Z">
+        </path>
+        </g>
+        </svg>
+      </button>
+    </div>
+    <div id="content" class="container">
+      <div id="intro" class="display">
+        <p class="center">Power Tools Database</p>
+      </div>
+      <div id="displayAllRecords" class="display tool-grid hidden">
+      </div>
+      <div id="displayOneRecord" class="display tool-search hidden">
+        <div class="flex-center">
+          <label for="recordID">Enter ID:</label>
+          <input type="number" id="recordID" name="recordID">
+          <button id="searchRecord">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 6C13.7614 6 16 8.23858 16 11M16.6588 16.6549L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"></path>
+            </svg>
+          </button>
+        </div>
+        <div id="toolRecord" class="display tool-card hidden"></div>
+      </div>
+    </div>
+</body>
+</html>
