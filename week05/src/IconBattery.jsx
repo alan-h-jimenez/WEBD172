@@ -1,0 +1,10 @@
+function IconBattery() {
+    return (
+        <svg viewBox="0 0 16 16" fill="none" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M0 2H8L3 8V9L6 9L5 14L0 14V2Z" fill="#000000"></path>
+            <path d="M8 7L9 2H14V5H16V11H14V14H6L11 8V7H8Z" fill="#000000"></path>
+        </svg>
+    );
+}
+
+export default IconBattery;
